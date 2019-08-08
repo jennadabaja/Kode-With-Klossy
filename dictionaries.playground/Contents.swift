@@ -61,8 +61,8 @@
 //}
 //var newScholar = Scholar(scholarName : "Amy" , scholarGrade : 11)
 //newScholar.writeCode()
-
-
+//
+//
 //class Jenna {
 //var studying = "coding"
 //var lastName = ""
@@ -79,3 +79,17 @@
 //var JennaNew = Jenna(JennaLast : "Dabaja" , JennaGrade : 12)
 //JennaNew.writeCode()
 
+
+
+
+
+//Design Notes
+//
+//1. Law of Proximity
+//   things that are grouped together will be seen together
+
+//2. Law of Enclosure
+//   If there's a border around something your brain will seperate it from the rest of the page
+
+//3. Law of Similarity
+//   if objects look similar to each other they will be looked at in a group together
