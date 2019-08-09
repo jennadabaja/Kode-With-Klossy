@@ -48,16 +48,28 @@
                                     <action selector="sendMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HPq-dF-mkl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYq-TX-A7y">
+                                <rect key="frame" x="43" y="333" width="73" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <state key="normal" title="🎢"/>
+                                <connections>
+                                    <action selector="sendMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEB-P3-Eo7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5f0-eZ-GTk" secondAttribute="bottom" constant="607" id="6MQ-bx-vNe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rYq-TX-A7y" secondAttribute="bottom" constant="435" id="6U3-iy-alF"/>
                             <constraint firstItem="5f0-eZ-GTk" firstAttribute="leading" secondItem="Vic-vW-qog" secondAttribute="trailing" constant="42" id="7Hu-Km-xuc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5f0-eZ-GTk" secondAttribute="trailing" constant="51" id="87j-hA-JDu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vic-vW-qog" secondAttribute="bottom" constant="607" id="Av1-s2-bz1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jp1-rt-rEO" secondAttribute="bottom" constant="607" id="BEo-sx-VJq"/>
                             <constraint firstItem="Jp1-rt-rEO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="DQr-EN-qHt"/>
+                            <constraint firstItem="rYq-TX-A7y" firstAttribute="top" secondItem="Jp1-rt-rEO" secondAttribute="bottom" constant="78" id="GqI-xc-JCM"/>
                             <constraint firstItem="Vic-vW-qog" firstAttribute="leading" secondItem="Jp1-rt-rEO" secondAttribute="trailing" constant="59" id="V0I-dd-l7L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rYq-TX-A7y" secondAttribute="trailing" constant="298" id="a1R-E4-v1C"/>
+                            <constraint firstItem="rYq-TX-A7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="boA-OU-CVD"/>
                             <constraint firstItem="Jp1-rt-rEO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="bqb-l5-1PO"/>
                             <constraint firstItem="Vic-vW-qog" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="clJ-cd-AYc"/>
                             <constraint firstItem="Vic-vW-qog" firstAttribute="leading" secondItem="Jp1-rt-rEO" secondAttribute="trailing" constant="59" id="haD-2J-d7y"/>
@@ -69,6 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="49.275362318840585" y="20.089285714285712"/>
         </scene>
     </scenes>
 </document>
