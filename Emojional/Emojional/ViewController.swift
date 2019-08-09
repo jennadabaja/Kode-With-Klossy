@@ -9,11 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let emojis = ["🏝" : "palm tree" , "🌃" : "downtown" , "🏔" : "nature" , "🎢" : "Amusement Parks"]
+    let emojis = ["🏝" : "palm tree" , "🌃" : "downtown" , "🏔" : "nature" , "🎢" : "Amusement Parks" , "❄️" : "cold", "🌎" : "random"]
     let customMessages =
         ["palm tree" : ["Bahamas", "Fiji", "Bora Bora", "Hawaii", "Mexico", "Bali", "Punta Cana"],
          "downtown" :  ["Chicago", "New York", "Paris", "Detroit", "Toronto", "Las Vegas", "Seattle"],
-         "nature" : ["Colorado", "Washington", "Montana","Arizona", "Alaska", "Tennessee", "Wyoming"], "Amusement Parks" : ["Cedar Point", "Six Flags", "Disneyland", "Canada's Wonderland", "Hersheypark", "Universal Studios", "Magic Kingdom"]]
+         "nature" : ["Colorado", "Washington", "Montana","Arizona", "Alaska", "Tennessee", "Wyoming"], "Amusement Parks" : ["Cedar Point", "Six Flags", "Disneyland", "Canada's Wonderland", "Hersheypark", "Universal Studios", "Magic Kingdom"],
+         "cold" : ["Iceland", "Alaska", "Prague", "Berlin", "Toronto", "Norway", "Amsterdam"],
+         "random" : ["Spain", "Los Angeles", "Dubai", "Austria", "Brazil", "Argentina", "Japan"]]
     
     @IBAction func sendMessage(sender: UIButton) {
         let selectedEmotion = sender.titleLabel!.text

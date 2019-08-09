@@ -56,9 +56,27 @@
                                     <action selector="sendMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEB-P3-Eo7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3p-i7-Qtu">
+                                <rect key="frame" x="175" y="333" width="73" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <state key="normal" title="❄️"/>
+                                <connections>
+                                    <action selector="sendMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kR7-M0-M02"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-CS-mXc">
+                                <rect key="frame" x="290" y="333" width="73" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <state key="normal" title="🌎"/>
+                                <connections>
+                                    <action selector="sendMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Du1-X6-MXt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nhd-CS-mXc" secondAttribute="bottom" constant="435" id="2Ed-Qg-sf2"/>
+                            <constraint firstItem="O3p-i7-Qtu" firstAttribute="leading" secondItem="rYq-TX-A7y" secondAttribute="trailing" constant="59" id="6FR-os-Qzu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5f0-eZ-GTk" secondAttribute="bottom" constant="607" id="6MQ-bx-vNe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rYq-TX-A7y" secondAttribute="bottom" constant="435" id="6U3-iy-alF"/>
                             <constraint firstItem="5f0-eZ-GTk" firstAttribute="leading" secondItem="Vic-vW-qog" secondAttribute="trailing" constant="42" id="7Hu-Km-xuc"/>
@@ -66,15 +84,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vic-vW-qog" secondAttribute="bottom" constant="607" id="Av1-s2-bz1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jp1-rt-rEO" secondAttribute="bottom" constant="607" id="BEo-sx-VJq"/>
                             <constraint firstItem="Jp1-rt-rEO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="DQr-EN-qHt"/>
+                            <constraint firstItem="Nhd-CS-mXc" firstAttribute="top" secondItem="5f0-eZ-GTk" secondAttribute="bottom" constant="78" id="DYO-7P-wbq"/>
                             <constraint firstItem="rYq-TX-A7y" firstAttribute="top" secondItem="Jp1-rt-rEO" secondAttribute="bottom" constant="78" id="GqI-xc-JCM"/>
+                            <constraint firstItem="Nhd-CS-mXc" firstAttribute="leading" secondItem="O3p-i7-Qtu" secondAttribute="trailing" constant="42" id="HPu-4x-pvk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nhd-CS-mXc" secondAttribute="trailing" constant="51" id="HUt-Vw-f2l"/>
                             <constraint firstItem="Vic-vW-qog" firstAttribute="leading" secondItem="Jp1-rt-rEO" secondAttribute="trailing" constant="59" id="V0I-dd-l7L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rYq-TX-A7y" secondAttribute="trailing" constant="298" id="a1R-E4-v1C"/>
                             <constraint firstItem="rYq-TX-A7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="boA-OU-CVD"/>
                             <constraint firstItem="Jp1-rt-rEO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="bqb-l5-1PO"/>
                             <constraint firstItem="Vic-vW-qog" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="clJ-cd-AYc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O3p-i7-Qtu" secondAttribute="trailing" constant="166" id="cnP-jc-fmq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O3p-i7-Qtu" secondAttribute="bottom" constant="435" id="fUI-S2-T1l"/>
                             <constraint firstItem="Vic-vW-qog" firstAttribute="leading" secondItem="Jp1-rt-rEO" secondAttribute="trailing" constant="59" id="haD-2J-d7y"/>
                             <constraint firstItem="5f0-eZ-GTk" firstAttribute="leading" secondItem="Vic-vW-qog" secondAttribute="trailing" constant="42" id="kR5-7D-nci"/>
                             <constraint firstItem="5f0-eZ-GTk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="p9Z-b7-vEA"/>
+                            <constraint firstItem="O3p-i7-Qtu" firstAttribute="top" secondItem="Vic-vW-qog" secondAttribute="bottom" constant="78" id="ulR-yU-7Je"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
