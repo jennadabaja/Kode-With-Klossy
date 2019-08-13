@@ -13,7 +13,7 @@
         <!--View Finder-->
         <scene sceneID="D5h-N8-OjI">
             <objects>
-                <tableViewController id="raU-5y-XhX" sceneMemberID="viewController">
+                <tableViewController id="raU-5y-XhX" customClass="PostTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ncO-PT-oEI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,19 +74,20 @@
                                 <rect key="frame" x="87" y="143" width="240" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-Ps-H78">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-Ps-H78">
                                 <rect key="frame" x="87" y="433" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textField:" destination="1bg-1D-tQy" eventType="editingDidEnd" id="lLi-vq-uI2"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9l-Ys-Rz6">
                                 <rect key="frame" x="186" y="795" width="43" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveTapped:" destination="1bg-1D-tQy" eventType="touchUpInside" id="sv3-oJ-dqu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCJ-sV-TsL">
                                 <rect key="frame" x="121" y="662" width="172" height="48"/>
@@ -100,7 +101,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PvG-Ds-BN3" firstAttribute="trailing" secondItem="fSc-p1-XHU" secondAttribute="trailing" constant="154" id="56p-eR-vax"/>
-                            <constraint firstItem="PvG-Ds-BN3" firstAttribute="trailing" secondItem="Ugd-Ps-H78" secondAttribute="trailing" constant="87" id="Bse-1f-uRr"/>
                             <constraint firstItem="PvG-Ds-BN3" firstAttribute="trailing" secondItem="SCJ-sV-TsL" secondAttribute="trailing" constant="121" id="EUh-qK-3hZ"/>
                             <constraint firstItem="PvG-Ds-BN3" firstAttribute="trailing" secondItem="XuV-Uw-lBd" secondAttribute="trailing" constant="158" id="HXq-aX-buU"/>
                             <constraint firstItem="b9l-Ys-Rz6" firstAttribute="top" secondItem="SCJ-sV-TsL" secondAttribute="bottom" constant="85" id="Ifp-PV-Ndf"/>
@@ -112,14 +112,13 @@
                             <constraint firstItem="fSc-p1-XHU" firstAttribute="leading" secondItem="PvG-Ds-BN3" secondAttribute="leading" constant="158" id="jAf-Ol-0LC"/>
                             <constraint firstItem="SCJ-sV-TsL" firstAttribute="top" secondItem="fSc-p1-XHU" secondAttribute="bottom" constant="22" id="wti-Ep-SBt"/>
                             <constraint firstItem="fSc-p1-XHU" firstAttribute="top" secondItem="XuV-Uw-lBd" secondAttribute="bottom" constant="22" id="zVg-uN-4yQ"/>
-                            <constraint firstItem="Ugd-Ps-H78" firstAttribute="leading" secondItem="PvG-Ds-BN3" secondAttribute="leading" constant="87" id="zoa-HI-ARa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PvG-Ds-BN3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="uyZ-rJ-35T"/>
                     <connections>
                         <outlet property="newImage" destination="uHf-lq-mnz" id="uv2-MV-Pyz"/>
-                        <outlet property="textField" destination="Ugd-Ps-H78" id="bSg-hn-qoW"/>
+                        <outlet property="textField" destination="Ugd-Ps-H78" id="jwQ-Fb-Bm3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="We7-dF-ebb" userLabel="First Responder" sceneMemberID="firstResponder"/>
