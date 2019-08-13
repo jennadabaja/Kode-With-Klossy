@@ -12,7 +12,7 @@ class AddToDoViewController: UIViewController {
     var previousVC = ToDoListTableViewController()
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var importantSwitch: UISwitch!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +25,7 @@ class AddToDoViewController: UIViewController {
         }
         previousVC.toDos.append(toDo)
         previousVC.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
         
     }
 

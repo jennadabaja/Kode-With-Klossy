@@ -9,16 +9,18 @@
 import UIKit
 
 class ToDoListTableViewController: UITableViewController {
-   
+    var toDos : [ToDo] = []
     func createToDos () -> [ToDo] {
         let swift = ToDo ()
         swift.name = "Learn Swift"
         swift.important = true
+       
         let dog = ToDo ()
         dog.name = "Walk the Dog"
+        swift.important = true
         return [swift, dog]
     }
-    var toDos : [ToDo] = []
+   
     
 
     override func viewDidLoad() {
